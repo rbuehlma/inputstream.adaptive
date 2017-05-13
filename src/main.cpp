@@ -2186,7 +2186,7 @@ bool CInputStreamAdaptive::Open(INPUTSTREAM& props)
   const char *lt(""), *lk(""), *ld(""), *lsc("");
   std::map<std::string, std::string> manh, medh;
   std::string mpd_url = props.m_strURL;
-  MANIFEST_TYPE manifest(MANIFEST_TYPE_UNKNOWN);
+  MANIFEST_TYPE manifest(MANIFEST_TYPE_MPD);
   for (unsigned int i(0); i < props.m_nCountInfoValues; ++i)
   {
     if (strcmp(props.m_ListItemProperties[i].m_strKey, "inputstream.adaptive.license_type") == 0)
