@@ -10,7 +10,7 @@
   <extension
     point="kodi.inputstream"
     name="adaptive"
-    extension=""
+    extension=".mpd"
     tags="true"
     listitemprops="license_type|license_key|license_data|manifest_type|server_certificate"
     library_@PLATFORM@="@LIBRARY_FILENAME@"/>

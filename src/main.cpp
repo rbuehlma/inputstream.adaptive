@@ -1438,7 +1438,7 @@ extern "C" {
     xbmc->Log(ADDON::LOG_DEBUG, "Open()");
 
     const char *lt(""), *lk(""), *ld(""), *lsc("");
-    MANIFEST_TYPE manifest(MANIFEST_TYPE_UNKNOWN);
+    MANIFEST_TYPE manifest(MANIFEST_TYPE_MPD);
     for (unsigned int i(0); i < props.m_nCountInfoValues; ++i)
     {
       if (strcmp(props.m_ListItemProperties[i].m_strKey, "inputstream.adaptive.license_type") == 0)
