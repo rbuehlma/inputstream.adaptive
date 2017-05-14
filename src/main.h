@@ -120,7 +120,7 @@ public:
   double GetPTS()const { return last_pts_; };
   bool CheckChange(bool bSet = false){ bool ret = changed_; changed_ = bSet; return ret; };
   void SetVideoResolution(unsigned int w, unsigned int h) { width_ = w < maxwidth_ ? w : maxwidth_; height_ = h < maxheight_ ? h : maxheight_;};
-  bool SeekTime(double seekTime, unsigned int streamId = 0, bool preceeding=true);
+  bool SeekTime(double seekTime, double &startPts, unsigned int streamId = 0, bool preceeding=true);
   bool IsLive() const { return adaptiveTree_->has_timeshift_buffer_; };
   MANIFEST_TYPE GetManifestType() const { return manifest_type_; };
   const AP4_UI08 *GetDefaultKeyId() const;
